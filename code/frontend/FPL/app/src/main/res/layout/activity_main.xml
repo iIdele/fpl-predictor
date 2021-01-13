@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#03fc6b"
+        android:weightSum="6">
+
+
+        <TextView
+            android:id="@+id/tvSortBy"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="11dp"
+            android:text="@string/sort_by"
+            android:textAlignment="center"
+            android:textColor="#200140"
+            android:textSize="15sp"
+            android:textStyle="bold">
+        </TextView>
+
+        <Spinner
+            android:id="@+id/sortSpinner"
+            android:layout_width="26dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="-15dp"
+            android:layout_marginLeft="-15dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_action_spinner"
+            />
+
+        <TextView
+            android:id="@+id/FPLPPHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="@string/fpl_point_predictions_heading"
+            android:textAlignment="center"
+            android:textColor="#200140"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/premier_league_font">
+        </TextView>
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:maxWidth="275dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="#200140"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#200140"
+        android:weightSum="10">
+
+
+        <LinearLayout
+            android:id="@+id/players_column_header"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="4.99"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginEnd="-25dp"
+            android:layout_marginRight="-25dp">
+
+            <TextView
+                android:text="@string/players_column"
+                android:textColor="#03fc6b"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold">
+            </TextView>
+            <ImageView
+                android:id="@+id/forward_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/foward_icon"
+                android:padding="4dp"
+                android:adjustViewBounds="true"
+                android:maxHeight="45dp"
+                android:layout_marginStart="-10dp"
+                android:layout_marginLeft="-10dp"
+                android:contentDescription="@string/football_player_icon" />
+        </LinearLayout>
+
+        <TextView
+            android:text="@string/tvGameweek"
+            android:textColor="#03fc6b"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.02"
+            android:textStyle="bold|italic"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="12sp"
+            >
+        </TextView>
+        <TextView
+            android:text="@string/predictions_column"
+            android:textColor="#03fc6b"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="4.99"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:textStyle="bold"
+            android:layout_marginStart="-25dp"
+            android:layout_marginLeft="-25dp"
+            >
+        </TextView>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/customToastText"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:padding="6dp"/>
+
+
+</LinearLayout>

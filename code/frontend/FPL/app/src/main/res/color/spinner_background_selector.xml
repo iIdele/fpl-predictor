@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--colours for background of selected spinner item-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+<!--    <item android:state_checked="true" android:color="#200140" />-->
+<!--    <item android:state_checked="true" android:color="#EAFF00" />-->
+    <item android:state_checked="true" android:color="#06F1FF" />
+<!--    <item android:state_checked="true" android:color="#F80158" />-->
+<!--    <item android:state_checked="true" android:color="#267788" />-->
+<!--    <item android:state_checked="true" android:color="EAFF00" />-->
+    <item android:color="#FFFFFF" />
+</selector>

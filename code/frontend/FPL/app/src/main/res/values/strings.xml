@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">FPL Point Predictor</string>
+<!--    <string name="Sort_by_button">Sort</string>-->
+    <string-array name="sorts">
+        <item>Predictions (Descending)</item>
+        <item>Predictions (Ascending)</item>
+        <item>Player Name (Ascending)</item>
+        <item>Player Name (Descending)</item>
+    </string-array>
+    <string name="sortBy">Sort By</string>
+    <string name="fpl_point_predictions_heading">FPL Point Predictor</string>
+    <string name="search_button">Search</string>
+    <string name="players_column">Players</string>
+    <string name="predictions_column">Predictions</string>
+    <string name="first_player_example">1st. Player 1</string>
+    <string name="first_prediction_example">15</string>
+    <string name="tvGameweek">GW29</string>
+    <string name="sort_by">Sort by</string>
+    <string name="football_player_icon">Football Player icon</string>
+</resources>

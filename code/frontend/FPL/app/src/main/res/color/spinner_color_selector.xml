@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--styles for text colour of selected spinner item-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_checked="true" android:color="#05A0C1" />
+    <item android:color="#000000" />
+</selector>
